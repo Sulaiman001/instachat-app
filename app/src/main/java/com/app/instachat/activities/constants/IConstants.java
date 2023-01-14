@@ -3,7 +3,6 @@ package com.app.instachat.activities.constants;
 import java.io.File;
 
 public interface IConstants {
-    //TODO: ADS_SHOWN variable now moved into build.gradle file. Please look into i.
 
     String SDPATH = "/storage/emulated/0/";
     String IMG_FOLDER = "MyImages";
@@ -121,18 +120,14 @@ public interface IConstants {
     String TYPE_RECORDING = "RECORDING";
 
     String DOWNLOAD_DATA = "download_data";
-    String BROADCAST_DOWNLOAD_EVENT = "com.bytesbee.firebase.chat.activities.DOWNLOAD_EVENT";
+    String BROADCAST_DOWNLOAD_EVENT = "com.instachat.firebase.chat.activities.DOWNLOAD_EVENT";
 
     String PLAYING_DATA = "playing_data";
-    String BROADCAST_PLAY_RECORDING_EVENT = "com.bytesbee.firebase.chat.activities.PLAY_RECORDING_EVENT";
+    String BROADCAST_PLAY_RECORDING_EVENT = "com.instachat.firebase.chat.activities.PLAY_RECORDING_EVENT";
 
     int STARTED = 0;
     int COMPLETED = 1;
 
-    String PATH_ABOUT_US = "about_us.html";
-    String PATH_PRIVACY_POLICY = "privacy_policy.html";
-    String DEFAULT_UPDATE_URL = "https://play.google.com/store/apps/details?id=";
-    String DEFAULT_UPDATE_URL_2 = "market://details?id=";
 
     // 0 = All Participants, 1 = Only Admin
     int SETTING_ALL_PARTICIPANTS = 0;
@@ -146,7 +141,7 @@ public interface IConstants {
     int STATUS_OFFLINE = 2;
 
     //From here, you may configure Private Image Preview. You are free to modify as necessary.
-    String IMG_PREVIEW = "https://i.ibb.co/mTX9q3c/img.png"; //"https://i.ibb.co/J3vHTrt/img.png";
+    String IMG_PREVIEW = "https://i.ibb.co/q/img.png";
 
     String TYPE_EMAIL = "Email";
     String TYPE_GOOGLE = "Google";

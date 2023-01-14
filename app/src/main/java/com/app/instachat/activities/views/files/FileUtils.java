@@ -136,7 +136,7 @@ public class FileUtils {
         return "application/octet-stream";
     }
 
-    public static final String AUTHORITY = "com.bytesbee.filechoser.documents";
+    public static final String AUTHORITY = "com.instachat.filechoser.documents";
 
     /**
      * @param uri The Uri to check.

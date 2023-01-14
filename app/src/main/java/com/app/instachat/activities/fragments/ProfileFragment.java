@@ -103,13 +103,9 @@ public class ProfileFragment extends BaseFragment implements View.OnClickListene
     private String currentId, strSignUpType = TYPE_EMAIL;
 
     private final List<String> userList = new ArrayList<>();
-    //private final List<String> groupAdminList = new ArrayList<>();
-    //private final List<String> groupAdminMemberList = new ArrayList<>();
-    //private final List<String> groupOthersList = new ArrayList<>();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
         final View layoutCameraGallery = view.findViewById(R.id.layoutCameraGallery);
@@ -219,12 +215,6 @@ public class ProfileFragment extends BaseFragment implements View.OnClickListene
     private void openAuthenticatePopup() {
         final AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
         CardView view = (CardView) mActivity.getLayoutInflater().inflate(R.layout.dialog_reauthenticate, null);
-
-        //if (SessionManager.get().isRTLOn()) {
-          //  view.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
-        //} else {
-          //  view.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
-        //}
 
         builder.setView(view);
 
@@ -550,12 +540,6 @@ public class ProfileFragment extends BaseFragment implements View.OnClickListene
         builder.setTitle(getText(R.string.strEnterAbout));
 
         CardView view = (CardView) getLayoutInflater().inflate(R.layout.dialog_description, null);
-
-        //if (SessionManager.get().isRTLOn()) {
-          //  view.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
-        //} else {
-          //  view.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
-        //}
 
         final AppCompatButton btnCancel = view.findViewById(R.id.btnCancel);
         final AppCompatButton btnDone = view.findViewById(R.id.btnDone);

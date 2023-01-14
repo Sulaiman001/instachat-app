@@ -59,9 +59,6 @@ public class ApplicationLifecycleManager implements ActivityLifecycleCallbacks {
     }
 
     public void onActivityCreated(Activity activity, Bundle bundle) {
-        //if (SessionManager.get().isRTLOn()) {
-          //  Utils.RTLSupport(activity.getWindow());
-        //}
     }
 
     public void onActivityDestroyed(Activity activity) {
